@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AstraLink Consultancy — Premium Education Advisory Services</title>
+<meta name="description" content="AstraLink Consultancy — premium education advisory services in Hong Kong. Website launching soon.">
+<!-- Placeholder site: keep out of search until the full site ships -->
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="AstraLink Consultancy">
+<meta property="og:description" content="Premium Education Advisory Services — Hong Kong. Launching soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.astralink-edu.com/">
+<style>
+  :root{
+    --navy:#16284c;
+    --navy-deep:#101d39;
+    --gold:#c6a05a;
+    --gold-lt:#e3c987;
+    --cream:#f4efe3;
+    --ink:#26303f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    min-height:100%;
+    font-family:"Segoe UI",Arial,sans-serif;
+    color:var(--cream);
+    background:
+      radial-gradient(120% 120% at 85% 8%, #20355f 0%, var(--navy) 48%, var(--navy-deep) 100%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:48px 22px;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* faint gold sweep echoing the business card */
+  body::before{
+    content:"";
+    position:fixed;
+    left:-18vw;top:-30vh;
+    width:60vw;height:160vh;
+    background:linear-gradient(180deg,var(--gold-lt),var(--gold));
+    opacity:.05;
+    border-radius:0 100% 100% 0 / 0 50% 50% 0;
+    z-index:0;
+  }
+  .wrap{position:relative;z-index:1;max-width:620px;display:flex;flex-direction:column;align-items:center;}
+  .logo{width:128px;height:auto;margin-bottom:26px;
+        filter:drop-shadow(0 6px 18px rgba(0,0,0,.45));}
+  .brand{font-family:Georgia,"Times New Roman",serif;font-size:34px;letter-spacing:.02em;color:#fff;}
+  .brand .star{color:var(--gold-lt);font-size:18px;vertical-align:super;margin-left:2px;}
+  .tagline{margin-top:10px;font-size:12.5px;font-weight:700;letter-spacing:.22em;
+           text-transform:uppercase;color:var(--gold);}
+  .rule{width:62px;height:1px;background:rgba(198,160,90,.6);margin:26px auto;}
+  .lead{font-size:16px;line-height:1.7;color:#d9dde6;max-width:430px;}
+  .lead .name{color:#fff;font-family:Georgia,serif;font-style:italic;}
+  .soon{margin-top:30px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8f9bb3;}
+  .contact{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;}
+  .contact a{display:inline-flex;align-items:center;gap:9px;color:var(--cream);
+             text-decoration:none;font-size:14.5px;
+             padding:11px 20px;border:1px solid rgba(198,160,90,.4);border-radius:999px;
+             transition:border-color .2s ease, background .2s ease, transform .2s ease;}
+  .contact a:hover{border-color:var(--gold);background:rgba(198,160,90,.1);transform:translateY(-1px);}
+  .contact .ic{color:var(--gold);font-size:16px;}
+  footer{margin-top:48px;font-size:11px;color:#6f7b94;letter-spacing:.04em;}
+  @media (max-width:480px){
+    .brand{font-size:27px;}
+    .logo{width:104px;}
+    .contact{flex-direction:column;gap:12px;}
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="AstraLink emblem">
+    <div class="brand">AstraLink<span class="star">&#10022;</span></div>
+    <div class="tagline">Premium Education Advisory Services</div>
+
+    <div class="rule"></div>
+
+    <p class="lead">
+      Personalised education advisory for Hong Kong families, led by
+      <span class="name">Jenny Lo Hanson</span>, Education Consultant.
+      Our full site is on its way.
+    </p>
+
+    <div class="soon">Website launching soon</div>
+
+    <nav class="contact">
+      <a href="mailto:jenny.hanson@astralink-edu.com">
+        <span class="ic">&#9993;</span>jenny.hanson@astralink-edu.com
+      </a>
+      <a href="tel:+85251188888">
+        <span class="ic">&#9742;</span>+852 5118 8888
+      </a>
+    </nav>
+
+    <footer>&copy; 2026 AstraLink Consultancy &middot; Hong Kong</footer>
+  </main>
+</body>
+</html>
